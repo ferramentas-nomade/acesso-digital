@@ -371,7 +371,7 @@ main {
 
     .card {
         width: 250px;
-        height: 350px;
+        height: auto;
     }
 
     .card h3 {
