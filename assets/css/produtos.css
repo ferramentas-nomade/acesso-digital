@@ -1,0 +1,344 @@
+.produto-video-container {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+
+.video-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    /* background-color: brown; */
+}
+
+.video-text-section p {
+    /* text-align: center; */
+    width: 60%;
+    font-size: 1.2rem;
+    /* font-weight: 200; */
+}
+
+.video-text-section p span {
+
+    width: 100%;
+    font-size: 1.2rem;
+    color: #011f64;
+    font-weight: bold;
+}
+
+.title-video {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #011f64;
+}
+
+.video-section {
+    width: 50%;
+}
+
+.video-section video {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.section-4 {
+    width: 100%;
+    height: 190vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: linear-gradient(90deg, #011f64, #021134);
+}
+
+.section-4 p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+    width: 50%;
+}
+
+.title-section-4 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+    width: 60%;
+    font-weight: bold;
+}
+
+.carrocel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-slides {
+    width: 100%;
+    height: 800px;
+    /* altura do carrossel */
+    display: flex;
+    justify-content: center;
+    /* centraliza horizontal */
+    align-items: center;
+    /* centraliza vertical */
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.carousel-slides img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    /* necessário para centralizar */
+    object-fit: contain;
+    /* mantém proporção e não corta */
+    border-radius: 12px;
+    display: none;
+    /* para o carrossel automático */
+    transition: opacity 1s ease-in-out;
+}
+
+
+.carousel-slides img.active {
+    display: block;
+    opacity: 1;
+}
+
+.carrocel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(1, 31, 100, 0.8);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carrocel .prev {
+    left: 10px;
+}
+
+.carrocel .next {
+    right: 10px;
+}
+
+.carrocel button:hover {
+    background: rgba(1, 31, 100, 1);
+}
+
+.produto-final {
+    border: 3px solid #011f6475;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    background: #f9f9fb;
+    /* fundo mais clean */
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30);
+    /* sombra mais sofisticada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-final:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.20);
+}
+
+.produto-final img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    /* mantém proporção da imagem */
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-price {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.preco_ancora {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.preco_ancora .cortado {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.preco_final {
+    font-size: 2rem;
+    color: #212020;
+    margin: 0.5rem 0;
+}
+
+.preco_final .final {
+    color: #e53935;
+    /* vermelho chamativo para preço final */
+}
+
+.btn_comprar {
+    margin-top: 1rem;
+    background: linear-gradient(90deg, #011f64, #45b0e6);
+    color: #fff;
+    width: 50%;
+    max-width: 250px;
+    height: 60px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(34, 117, 173, 0.3);
+}
+
+.btn_comprar:hover {
+    background: linear-gradient(90deg, #45b0e6, #011f64);
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(34, 117, 173, 0.4);
+}
+
+.timer_text {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+#countdown1-mobile {
+    font-size: 1.5rem;
+    color: #2275ad;
+    font-weight: 700;
+    margin: 0 0.2rem;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .carrocel {
+        max-width: 100%;
+    }
+
+    .produto-video-container {
+        flex-direction: column;
+        width: 100%;
+        /* background-color: #45b0e6; */
+        align-items: center;
+        /* padding: 20px; */
+    }
+
+    .video-text-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .video-text-section p {
+        margin-top: 1rem;
+        font-size: 0.90rem;
+        width: 95%;
+    }
+
+    .title-video {
+        font-size: 1.4rem;
+    }
+
+    .video-section {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video-section video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-4 {
+        height: auto;
+        padding: 10px;
+    }
+
+    .title-section-4 {
+        font-size: 1.8rem;
+        width: 100%;
+    }
+
+    .section-4 p {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .carrocel {
+        position: relative;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .carousel-slides {
+        width: 100%;
+        height: 400px;
+    }
+
+    .carousel-slides img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .produto-final {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .card-price {
+        /* background-color: #212020; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .preco_ancora {
+        font-size: 1.2rem;
+    }
+
+    .preco_final {
+        font-size: 1.4rem;
+    }
+
+    #countdown1-mobile {
+        font-size: 0.90rem;
+    }
+
+    .btn_comprar {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
